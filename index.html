@@ -16,7 +16,78 @@
   </head>
   <body>
     <div class="container">
-      <div class="weather-wrapper mx-auto"></div>
+      <div class="weather-wrapper mx-auto border rounded p-5">
+        <div class="logo mb-4">
+          <img src="src/img/logo.png" class="logo-img" alt="" />
+        </div>
+        <form id="search-form">
+          <div class="row pb-4 justify-content-between">
+            <div class="col-9">
+              <input
+                type="search"
+                id="search-city"
+                class="form-control"
+                placeholder="Enter a city..."
+              />
+            </div>
+            <div class="col-3">
+              <input
+                type="submit"
+                value="Search"
+                class="btn btn-primary w-100 btn-search"
+              />
+            </div>
+          </div>
+        </form>
+        <div class="row mt-4">
+          <div class="col-6">
+            <h1 class="mb-2" id="city">San Francisco</h1>
+            <ul>
+              <li>
+                <span id="date">Saturday 23:36</span>,
+                <span class="description">few coluds</span>
+              </li>
+              <li class="details">
+                Humidity: <span id="humidity"></span>, Wind:
+                <span id="wind"></span>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6">
+            <div class="d-flex align-items-center justify-content-end">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAjdJREFUeNrtmsGtgzAMhjtCRmAERsgIHYFjjx2BERiBEToCI+TaG2+DbJBnKj8pD1Eaiv8AwpX+C1Ap/hzHjpNLCOFyZl0UgAJQAApAASgABaAAFIACODEA9C/83AypIrUkRwpv5Pib4dsCNp5cAMgIS3rMGPxJw3/t4QDQoEtSt8LwsTpJEFAAAONjNUM4HSIEOO7vJC8Mwa2FkHURZBDSM2KAWu4CwPP5LEgtyZMCy/OzIgKBgGA2BUAGliPDxxreldFM2EU4JAOgwRtSPeHdmj0/Z3z8fcEQasTCiATgEgxMURvNAkR2sOIA2MtBSH60KNbC4dAhAHhBACFDdrBiADj2A0DI7PA4AgB0dihWAaBBXUk92Hhkdqi+BsDGh8ySzg7tGgD9BgC88FrgvgKQIeY/ZgepxXB3m6EFm6bm7ADqQwDggSLUHQVA2KG6P50JQJ+a96UBuC08OwqRerOWGPftkUa7Oc/GrTBKo5b0mEivwzOLAlABjb8v6EY1CXVGgwCAampUqZ5NNP5fuS1aB6w87Zn1PG+XpStOKw3AIro5IONfM0e8EhRsZFxz7EYRACRmgQc0YPMAENrAdJk6UBgAKwojz/W/yQUgXgilARguS5dUd2Yir+foPzSQ7TAfifdLOjZvzhSzQID0A3gmuJTDzIQzRXg4IC9IvFsY68jzWxr/qgvQV2TsRJ1gwMXOIuW+JNWhjtx2DWCDE6fvAOhNUQWgABSAAlAACkABKAAFoABOp1+6Bd0LJ+BorgAAAABJRU5ErkJggg=="
+                alt=""
+                class="weather-icon"
+              />
+              <div>
+                <span id="temperature">9</span>
+                <span class="unit">˚C</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="forecast py-5">
+          <!-- <div class="row">
+            <div class="col-2">
+              <h6 class="day">Sun</h6>
+              <img
+                src="http://openweathermap.org/img/wn/50d@2x.png"
+                width="42"
+                alt=""
+              />
+              <div class="forecast-temperatures">
+                <span class="forecast-max">37˚</span>
+                <span class="forecast-min">24˚</span>
+              </div>
+            </div>
+            <div class="col-2"></div>
+            <div class="col-2"></div>
+            <div class="col-2"></div>
+            <div class="col-2"></div>
+          </div> -->
+        </div>
+      </div>
     </div>
   </body>
   <script src="src/app.js"></script>
