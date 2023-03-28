@@ -2,6 +2,12 @@ body {
     font-family: sans-serif;
 }
 
+h1 {
+    color: #272142;
+    font-size: 38px;
+    font-weight: 700;
+}
+
 .logo-img {
     width: 150px;
 }
@@ -15,11 +21,20 @@ body {
     border-bottom: 1px solid #f9f7fe;
 }
 
-h1 {
-    color: #272142;
-    font-size: 38px;
-    font-weight: 700;
+#search-city {
+    background: #f9f7fe;
+    color: rgba(39, 33, 66, .4);
 }
+
+#search-city::placeholder {
+    color: rgba(39, 33, 66, .4);
+}
+
+.btn-search {
+    background: #885DF1;
+}
+
+
 
 ul {
     list-style: none;
@@ -62,4 +77,15 @@ ul li {
 
 .forecast-temperatures {
     color: #F65282;
+}
+
+.footer {
+    text-align: center;
+    font-size: 14px;
+    color: rgba(39, 33, 66, .4)
+}
+
+.footer a {
+    color: #885DF1;
+    text-decoration: none;
 }
